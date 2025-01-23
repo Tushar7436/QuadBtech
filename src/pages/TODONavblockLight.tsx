@@ -1,80 +1,95 @@
-import { useCallback } from "react";
+import { FunctionComponent, useCallback } from "react";
 import DONUTCHART from "../components/DONUTCHART";
 import TextCell from "../components/TextCell";
 import Checkboxes from "../components/Checkboxes";
 import styles from "./TODONavblockLight.module.css";
 
-const TODONavblockLight = () => {
-  const onAccordionHeaderClick = useCallback((event) => {
-    const element = event.target;
+const TODONavblockLight: FunctionComponent = () => {
+  const onAccordionHeaderClick = useCallback(
+    (event: React.MouseEvent<HTMLElement>) => {
+      const element = event.target as HTMLElement;
 
-    const accItem = element.closest("[data-acc-item]") || element;
-    const accContent = accItem.querySelector("[data-acc-content]");
-    const isOpen = accItem.hasAttribute("data-acc-open");
-    const nextOuterSibling =
-      accItem?.nextElementSibling || accItem?.parentElement?.nextElementSibling;
-    const prevOuterSibling =
-      accItem?.previousElementSibling ||
-      accItem?.parentElement?.previousElementSibling;
-    const siblingContainerAccItem = accItem?.hasAttribute("data-acc-original")
-      ? accItem?.nextElementSibling ||
-        nextOuterSibling?.querySelector("[data-acc-item]") ||
-        nextOuterSibling
-      : accItem?.previousElementSibling ||
-        prevOuterSibling?.querySelector("[data-acc-item]") ||
-        prevOuterSibling;
-    const siblingAccItem =
-      siblingContainerAccItem?.querySelector("[data-acc-item]") ||
-      siblingContainerAccItem;
+      const accItem: HTMLElement =
+        element.closest("[data-acc-item]") || element;
+      const accContent = accItem.querySelector(
+        "[data-acc-content]"
+      ) as HTMLElement;
+      const isOpen = accItem.hasAttribute("data-acc-open");
+      const nextOuterSibling =
+        accItem?.nextElementSibling ||
+        (accItem?.parentElement?.nextElementSibling as HTMLElement);
+      const prevOuterSibling =
+        accItem?.previousElementSibling ||
+        (accItem?.parentElement?.previousElementSibling as HTMLElement);
+      const siblingContainerAccItem = accItem?.hasAttribute("data-acc-original")
+        ? accItem?.nextElementSibling ||
+          nextOuterSibling?.querySelector("[data-acc-item]") ||
+          nextOuterSibling
+        : accItem?.previousElementSibling ||
+          prevOuterSibling?.querySelector("[data-acc-item]") ||
+          prevOuterSibling;
+      const siblingAccItem =
+        (siblingContainerAccItem?.querySelector(
+          "[data-acc-item]"
+        ) as HTMLElement) || siblingContainerAccItem;
 
-    if (!siblingAccItem) return;
-    const originalDisplay = "flex";
-    const siblingDisplay = "flex";
+      if (!siblingAccItem) return;
+      const originalDisplay = "flex";
+      const siblingDisplay = "flex";
 
-    const openStyleObject = {
-      "grid-template-rows": "1fr",
-    };
-    const closeStyleObject = {
-      "padding-top": "0px",
-      "padding-bottom": "0px",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "grid-template-rows": "0fr",
-    };
+      const openStyleObject = {
+        "grid-template-rows": "1fr",
+      };
+      const closeStyleObject = {
+        "padding-top": "0px",
+        "padding-bottom": "0px",
+        "margin-bottom": "0px",
+        "margin-top": "0px",
+        "grid-template-rows": "0fr",
+      };
 
-    function applyStyles(element, styleObject) {
-      Object.assign(element.style, styleObject);
-    }
+      function applyStyles(
+        element: HTMLElement,
+        styleObject: Record<string, string>
+      ) {
+        Object.assign(element.style, styleObject);
+      }
 
-    function removeStyles(element, styleObject) {
-      Object.keys(styleObject).forEach((key) => {
-        element?.style.removeProperty(key);
-      });
-    }
+      function removeStyles(
+        element: HTMLElement,
+        styleObject: Record<string, string>
+      ) {
+        Object.keys(styleObject).forEach((key) => {
+          element?.style.removeProperty(key);
+        });
+      }
 
-    if (isOpen) {
-      removeStyles(accContent, openStyleObject);
-      applyStyles(accContent, closeStyleObject);
+      if (isOpen) {
+        removeStyles(accContent, openStyleObject);
+        applyStyles(accContent, closeStyleObject);
 
-      setTimeout(() => {
+        setTimeout(() => {
+          if (accItem) {
+            accItem.style.display = "none";
+            siblingAccItem.style.display = siblingDisplay;
+          }
+        }, 100);
+      } else {
         if (accItem) {
           accItem.style.display = "none";
-          siblingAccItem.style.display = siblingDisplay;
+          siblingAccItem.style.display = originalDisplay;
         }
-      }, 100);
-    } else {
-      if (accItem) {
-        accItem.style.display = "none";
-        siblingAccItem.style.display = originalDisplay;
+        const siblingAccContent = siblingAccItem?.querySelector(
+          "[data-acc-content]"
+        ) as HTMLElement;
+        setTimeout(() => {
+          removeStyles(siblingAccContent, closeStyleObject);
+          applyStyles(siblingAccContent, openStyleObject);
+        }, 1);
       }
-      const siblingAccContent =
-        siblingAccItem?.querySelector("[data-acc-content]");
-      setTimeout(() => {
-        removeStyles(siblingAccContent, closeStyleObject);
-        applyStyles(siblingAccContent, openStyleObject);
-      }, 1);
-    }
-  }, []);
+    },
+    []
+  );
 
   return (
     <div className={styles.toDoNavblockLight}>

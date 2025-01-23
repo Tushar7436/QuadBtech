@@ -1,8 +1,23 @@
-import { useMemo } from "react";
-import PropTypes from "prop-types";
+import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import styles from "./DONUTCHART.module.css";
 
-const DONUTCHART = ({
+export type DONUTCHARTType = {
+  className?: string;
+  group2017?: string;
+
+  /** Variant props */
+  percentage?: boolean;
+  products?: 2;
+  theme?: string;
+  value?: boolean;
+
+  /** Style props */
+  groupDivTop?: CSSProperties["top"];
+  groupDivRight?: CSSProperties["right"];
+  groupDivBottom?: CSSProperties["bottom"];
+};
+
+const DONUTCHART: FunctionComponent<DONUTCHARTType> = ({
   className = "",
   percentage = false,
   products = 2,
@@ -13,7 +28,7 @@ const DONUTCHART = ({
   groupDivBottom,
   group2017,
 }) => {
-  const groupDivStyle = useMemo(() => {
+  const groupDivStyle: CSSProperties = useMemo(() => {
     return {
       top: groupDivTop,
       right: groupDivRight,
@@ -76,22 +91,6 @@ const DONUTCHART = ({
       <div className={styles.donutChartItem} />
     </div>
   );
-};
-
-DONUTCHART.propTypes = {
-  className: PropTypes.string,
-  group2017: PropTypes.string,
-
-  /** Variant props */
-  percentage: PropTypes.bool,
-  products: PropTypes.number,
-  theme: PropTypes.number,
-  value: PropTypes.bool,
-
-  /** Style props */
-  groupDivTop: PropTypes.string,
-  groupDivRight: PropTypes.string,
-  groupDivBottom: PropTypes.string,
 };
 
 export default DONUTCHART;

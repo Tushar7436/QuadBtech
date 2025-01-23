@@ -1,80 +1,98 @@
-import { useCallback } from "react";
+import { FunctionComponent, useCallback } from "react";
 import TextCell1 from "./TextCell1";
 import Checkboxes from "./Checkboxes";
-import PropTypes from "prop-types";
 import styles from "./TaskCells.module.css";
 
-const TaskCells = ({ className = "" }) => {
-  const onAccordionHeaderClick = useCallback((event) => {
-    const element = event.target;
+export type TaskCellsType = {
+  className?: string;
+};
 
-    const accItem = element.closest("[data-acc-item]") || element;
-    const accContent = accItem.querySelector("[data-acc-content]");
-    const isOpen = accItem.hasAttribute("data-acc-open");
-    const nextOuterSibling =
-      accItem?.nextElementSibling || accItem?.parentElement?.nextElementSibling;
-    const prevOuterSibling =
-      accItem?.previousElementSibling ||
-      accItem?.parentElement?.previousElementSibling;
-    const siblingContainerAccItem = accItem?.hasAttribute("data-acc-original")
-      ? accItem?.nextElementSibling ||
-        nextOuterSibling?.querySelector("[data-acc-item]") ||
-        nextOuterSibling
-      : accItem?.previousElementSibling ||
-        prevOuterSibling?.querySelector("[data-acc-item]") ||
-        prevOuterSibling;
-    const siblingAccItem =
-      siblingContainerAccItem?.querySelector("[data-acc-item]") ||
-      siblingContainerAccItem;
+const TaskCells: FunctionComponent<TaskCellsType> = ({ className = "" }) => {
+  const onAccordionHeaderClick = useCallback(
+    (event: React.MouseEvent<HTMLElement>) => {
+      const element = event.target as HTMLElement;
 
-    if (!siblingAccItem) return;
-    const originalDisplay = "flex";
-    const siblingDisplay = "flex";
+      const accItem: HTMLElement =
+        element.closest("[data-acc-item]") || element;
+      const accContent = accItem.querySelector(
+        "[data-acc-content]"
+      ) as HTMLElement;
+      const isOpen = accItem.hasAttribute("data-acc-open");
+      const nextOuterSibling =
+        accItem?.nextElementSibling ||
+        (accItem?.parentElement?.nextElementSibling as HTMLElement);
+      const prevOuterSibling =
+        accItem?.previousElementSibling ||
+        (accItem?.parentElement?.previousElementSibling as HTMLElement);
+      const siblingContainerAccItem = accItem?.hasAttribute("data-acc-original")
+        ? accItem?.nextElementSibling ||
+          nextOuterSibling?.querySelector("[data-acc-item]") ||
+          nextOuterSibling
+        : accItem?.previousElementSibling ||
+          prevOuterSibling?.querySelector("[data-acc-item]") ||
+          prevOuterSibling;
+      const siblingAccItem =
+        (siblingContainerAccItem?.querySelector(
+          "[data-acc-item]"
+        ) as HTMLElement) || siblingContainerAccItem;
 
-    const openStyleObject = {
-      "grid-template-rows": "1fr",
-    };
-    const closeStyleObject = {
-      "padding-top": "0px",
-      "padding-bottom": "0px",
-      "margin-bottom": "0px",
-      "margin-top": "0px",
-      "grid-template-rows": "0fr",
-    };
+      if (!siblingAccItem) return;
+      const originalDisplay = "flex";
+      const siblingDisplay = "flex";
 
-    function applyStyles(element, styleObject) {
-      Object.assign(element.style, styleObject);
-    }
+      const openStyleObject = {
+        "grid-template-rows": "1fr",
+      };
+      const closeStyleObject = {
+        "padding-top": "0px",
+        "padding-bottom": "0px",
+        "margin-bottom": "0px",
+        "margin-top": "0px",
+        "grid-template-rows": "0fr",
+      };
 
-    function removeStyles(element, styleObject) {
-      Object.keys(styleObject).forEach((key) => {
-        element?.style.removeProperty(key);
-      });
-    }
+      function applyStyles(
+        element: HTMLElement,
+        styleObject: Record<string, string>
+      ) {
+        Object.assign(element.style, styleObject);
+      }
 
-    if (isOpen) {
-      removeStyles(accContent, openStyleObject);
-      applyStyles(accContent, closeStyleObject);
+      function removeStyles(
+        element: HTMLElement,
+        styleObject: Record<string, string>
+      ) {
+        Object.keys(styleObject).forEach((key) => {
+          element?.style.removeProperty(key);
+        });
+      }
 
-      setTimeout(() => {
+      if (isOpen) {
+        removeStyles(accContent, openStyleObject);
+        applyStyles(accContent, closeStyleObject);
+
+        setTimeout(() => {
+          if (accItem) {
+            accItem.style.display = "none";
+            siblingAccItem.style.display = siblingDisplay;
+          }
+        }, 100);
+      } else {
         if (accItem) {
           accItem.style.display = "none";
-          siblingAccItem.style.display = siblingDisplay;
+          siblingAccItem.style.display = originalDisplay;
         }
-      }, 100);
-    } else {
-      if (accItem) {
-        accItem.style.display = "none";
-        siblingAccItem.style.display = originalDisplay;
+        const siblingAccContent = siblingAccItem?.querySelector(
+          "[data-acc-content]"
+        ) as HTMLElement;
+        setTimeout(() => {
+          removeStyles(siblingAccContent, closeStyleObject);
+          applyStyles(siblingAccContent, openStyleObject);
+        }, 1);
       }
-      const siblingAccContent =
-        siblingAccItem?.querySelector("[data-acc-content]");
-      setTimeout(() => {
-        removeStyles(siblingAccContent, closeStyleObject);
-        applyStyles(siblingAccContent, openStyleObject);
-      }, 1);
-    }
-  }, []);
+    },
+    []
+  );
 
   return (
     <div className={[styles.taskCells, className].join(" ")} data-acc-group>
@@ -847,10 +865,6 @@ const TaskCells = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-TaskCells.propTypes = {
-  className: PropTypes.string,
 };
 
 export default TaskCells;

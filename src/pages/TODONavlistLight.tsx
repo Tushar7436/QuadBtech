@@ -1,10 +1,16 @@
+import { FunctionComponent } from "react";
 import DONUTCHART from "../components/DONUTCHART";
 import TextCell from "../components/TextCell";
 import TaskCells from "../components/TaskCells";
-import PropTypes from "prop-types";
 import styles from "./TODONavlistLight.module.css";
 
-const TODONavlistLight = ({ onClose }) => {
+export type TODONavlistLightType = {
+  onClose?: () => void;
+};
+
+const TODONavlistLight: FunctionComponent<TODONavlistLightType> = ({
+  onClose,
+}) => {
   return (
     <div className={styles.toDoNavlistLight}>
       <header className={styles.webAppNavBar}>
@@ -152,10 +158,6 @@ const TODONavlistLight = ({ onClose }) => {
       </main>
     </div>
   );
-};
-
-TODONavlistLight.propTypes = {
-  onClose: PropTypes.func,
 };
 
 export default TODONavlistLight;

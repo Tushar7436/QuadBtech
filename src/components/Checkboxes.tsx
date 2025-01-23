@@ -1,7 +1,15 @@
-import PropTypes from "prop-types";
+import { FunctionComponent } from "react";
 import styles from "./Checkboxes.module.css";
 
-const Checkboxes = ({
+export type CheckboxesType = {
+  className?: string;
+
+  /** Variant props */
+  state?: string;
+  type?: string;
+};
+
+const Checkboxes: FunctionComponent<CheckboxesType> = ({
   className = "",
   state = "Enabled",
   type = "Selected",
@@ -17,14 +25,6 @@ const Checkboxes = ({
       </div>
     </div>
   );
-};
-
-Checkboxes.propTypes = {
-  className: PropTypes.string,
-
-  /** Variant props */
-  state: PropTypes.number,
-  type: PropTypes.number,
 };
 
 export default Checkboxes;

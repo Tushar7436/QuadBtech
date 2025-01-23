@@ -1,7 +1,11 @@
-import PropTypes from "prop-types";
+import { FunctionComponent } from "react";
 import styles from "./TextCell.module.css";
 
-const TextCell = ({ className = "" }) => {
+export type TextCellType = {
+  className?: string;
+};
+
+const TextCell: FunctionComponent<TextCellType> = ({ className = "" }) => {
   return (
     <div className={[styles.textCell, className].join(" ")}>
       <div className={styles.addATask}>Add A Task</div>
@@ -34,10 +38,6 @@ const TextCell = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-TextCell.propTypes = {
-  className: PropTypes.string,
 };
 
 export default TextCell;
