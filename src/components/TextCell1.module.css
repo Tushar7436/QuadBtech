@@ -1,0 +1,47 @@
+.buyGroceries {
+  height: 20px;
+  width: 91px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.checkboxesParent {
+  height: 48px;
+  width: 365.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-207xl) 0px 0px;
+  box-sizing: border-box;
+}
+.phstarIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.textCell {
+  width: 1020px;
+  height: 80px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-sm) var(--padding-13xl) var(--padding-base) 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+  font-family: var(--font-outfit);
+}

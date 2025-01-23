@@ -1,0 +1,24 @@
+.container {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  border-radius: var(--br-11xs);
+  border: 2px solid var(--color-gray-300);
+  box-sizing: border-box;
+}
+.stateLayer {
+  border-radius: var(--br-81xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xs);
+}
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xs);
+}

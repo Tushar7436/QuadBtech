@@ -1,0 +1,376 @@
+.container {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  border-radius: var(--br-11xs);
+  z-index: 0;
+}
+.checkSmallIcon {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  z-index: 1;
+}
+.stateLayer {
+  border-radius: var(--br-81xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xs);
+  position: relative;
+}
+.checkboxes {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xs);
+  box-sizing: border-box;
+}
+.readABook {
+  width: 91px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.readABookWrapper {
+  height: 34px;
+  width: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0px 0px;
+  box-sizing: border-box;
+}
+.checkboxesParent {
+  height: 48px;
+  width: 131px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.phstarIcon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.phstarWrapper {
+  height: 36px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0px 0px;
+  box-sizing: border-box;
+}
+.textCell {
+  width: 1020px;
+  height: 56px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: var(--gap-814xl);
+}
+.cleanTheHouse {
+  width: 107px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cleanTheHouseWrapper {
+  height: 34px;
+  width: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0px 0px;
+  box-sizing: border-box;
+}
+.checkboxesGroup {
+  height: 48px;
+  width: 154px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.textCell1 {
+  width: 1020px;
+  height: 56px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: var(--gap-791xl);
+}
+.container1 {
+  width: 1020px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  overflow: hidden;
+}
+.accordionContent {
+  width: 1020px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.accordionContent.accordion__open {
+  grid-template-rows: 1fr;
+}
+.accordionContent.accordion__close {
+  grid-template-rows: 0fr;
+}
+.preparePresentation {
+  width: 144px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.preparePresentationWrapper {
+  height: 34px;
+  width: 143px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0px 0px;
+  box-sizing: border-box;
+}
+.checkboxesContainer {
+  height: 48px;
+  width: 191px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.textCell2 {
+  width: 1020px;
+  height: 56px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: var(--gap-754xl);
+}
+.updateBlog {
+  width: 84px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.accordionContent1 {
+  position: relative;
+  color: transparent;
+  display: none;
+}
+.div {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.frame9Open {
+  width: 1020px;
+  height: 274px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) 0px;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.readABook1 {
+  width: 136px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.readABook2 {
+  width: 88px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.readABook3 {
+  width: 199px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.readABook4 {
+  width: 120px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.completed {
+  width: 75px;
+  height: 20px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.accordionContentaccordionDef {
+  width: 1020px;
+  display: grid;
+  grid-template-rows: 1fr;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.accordionContentaccordionDef.accordion__open {
+  grid-template-rows: 1fr;
+}
+.accordionContentaccordionDef.accordion__close {
+  grid-template-rows: 0fr;
+}
+.completedTasks {
+  width: 1020px;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) 0px;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.buyGroceries {
+  height: 20px;
+  width: 84px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.checkboxesParent21 {
+  height: 48px;
+  width: 365.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-207xl) 0px 0px;
+  box-sizing: border-box;
+}
+.phstarIcon24 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.textCellClose {
+  width: 1020px;
+  height: 80px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-sm) var(--padding-13xl) var(--padding-base) 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.taskCells {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+  font-family: var(--font-outfit);
+}

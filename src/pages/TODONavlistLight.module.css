@@ -1,0 +1,378 @@
+.menuIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logomarkIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.doit {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.04em;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 55px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 0px 0px var(--padding-307xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.dividerIcon {
+  height: 0px;
+  width: calc(100% + 192px);
+  position: absolute;
+  margin: 0 !important;
+  right: -96px;
+  bottom: 0px;
+  left: -96px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.webAppNavBar {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-xs) 0px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-seagreen-100);
+  font-family: var(--font-sen);
+}
+.label {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 75px;
+}
+.labelWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-63xl) 0px var(--padding-64xl);
+}
+.label1 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.menuItem {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-107xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.label2 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 43px;
+}
+.menuItem1 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-seagreen-300);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-122xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+  color: var(--color-seagreen-200);
+}
+.label3 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 70px;
+}
+.menuItem2 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-95xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.label4 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 56px;
+}
+.menuItem3 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-109xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.label5 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 103px;
+}
+.menuItem4 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-62xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.sidePanelMenu {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl) 0px;
+}
+.sidebar {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.menuItem5 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-114xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+}
+.donutChartWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-11xs);
+}
+.profileIcon {
+  width: 118px;
+  height: 118px;
+  position: absolute;
+  margin: 0 !important;
+  top: -59px;
+  right: 76px;
+  border-radius: var(--br-2928xl-1);
+  object-fit: cover;
+}
+.frameParent {
+  align-self: stretch;
+  background-color: var(--color-mintcream);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-53xl-9) var(--padding-xl) var(--padding-61xl);
+  position: relative;
+  gap: var(--gap-base);
+  flex-shrink: 0;
+}
+.containerInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-55xl) 0px 0px;
+  box-sizing: border-box;
+  height: 100%;
+  max-width: 90%;
+  overflow: auto;
+}
+.label7 {
+  position: relative;
+  line-height: 16px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 35px;
+}
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0px 0px;
+}
+.frameDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+  flex-shrink: 0;
+  max-width: calc(100% - 328px);
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-outfit);
+}
+.container1 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xl) 0px 0px;
+  box-sizing: border-box;
+  gap: var(--gap-29xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+  font-family: var(--font-outfit);
+}
+.toDoNavlistLight {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-29xl);
+  box-sizing: border-box;
+  min-height: 900px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 925px) {
+  .frameParent {
+    padding-top: var(--padding-28xl);
+    padding-bottom: var(--padding-33xl);
+    box-sizing: border-box;
+  }
+
+  .containerInner {
+    display: none;
+    padding-top: var(--padding-29xl);
+    box-sizing: border-box;
+  }
+
+  .frameContainer {
+    max-width: 100%;
+  }
+
+  .toDoNavlistLight {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container1 {
+    gap: var(--gap-5xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+
+  .frameParent {
+    padding-top: var(--padding-12xl);
+    padding-bottom: var(--padding-15xl);
+    box-sizing: border-box;
+  }
+
+  .containerInner {
+    padding-top: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}

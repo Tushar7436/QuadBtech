@@ -1,0 +1,88 @@
+.addATask {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 75px;
+}
+.claritynotificationLineIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.iconContainerWrapper {
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0px 0px var(--padding-8xs);
+  box-sizing: border-box;
+}
+.label {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.menuItem {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-seagreen-300);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-mini) var(--padding-5xs)
+    var(--padding-base);
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  color: var(--color-seagreen-200);
+}
+.textCell {
+  align-self: stretch;
+  background: linear-gradient(
+    0deg,
+    rgba(53, 121, 55, 0.1),
+    rgba(208, 255, 210, 0.1)
+  );
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-37xl) var(--padding-10xs) var(--padding-base)
+    var(--padding-xl);
+  gap: var(--gap-29xl);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-400);
+  font-family: var(--font-outfit);
+}
+
+@media screen and (max-width: 700px) {
+  .textCell {
+    gap: var(--gap-5xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,874 @@
+.menuIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logomarkIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.doit {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.04em;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 55px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 0px 0px var(--padding-307xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.dividerIcon {
+  height: 0px;
+  width: calc(100% + 192px);
+  position: absolute;
+  margin: 0 !important;
+  right: -96px;
+  bottom: 0px;
+  left: -96px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.webAppNavBar {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-xs) 0px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-seagreen-100);
+  font-family: var(--font-sen);
+}
+.label {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 75px;
+}
+.labelWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-63xl) 0px var(--padding-64xl);
+}
+.label1 {
+  text-decoration: none;
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  color: inherit;
+}
+.menuItem {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-107xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.label2 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 43px;
+}
+.menuItem1 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-seagreen-300);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-122xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+  color: var(--color-seagreen-200);
+}
+.label3 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 70px;
+}
+.menuItem2 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-95xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.label4 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 56px;
+}
+.menuItem3 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-109xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.label5 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 103px;
+}
+.menuItem4 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-62xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.sidePanelMenu {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl) 0px;
+}
+.sidebar {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.label6 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.menuItem5 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-114xl) var(--padding-5xs)
+    var(--padding-base);
+  gap: var(--gap-base);
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+}
+.donutChartWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-11xs);
+}
+.profileIcon {
+  width: 118px;
+  height: 118px;
+  position: absolute;
+  margin: 0 !important;
+  top: -59px;
+  right: 76px;
+  border-radius: var(--br-2928xl-1);
+  object-fit: cover;
+}
+.frameParent {
+  align-self: stretch;
+  background-color: var(--color-mintcream);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-53xl-9) var(--padding-xl) var(--padding-61xl);
+  position: relative;
+  gap: var(--gap-base);
+  flex-shrink: 0;
+}
+.containerInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-55xl) 0px 0px;
+}
+.label7 {
+  text-decoration: none;
+  position: relative;
+  line-height: 16px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 35px;
+}
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0px 0px;
+}
+.frameDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buyGroceries {
+  position: relative;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.taskCheckboxes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-207xl) 0px 0px;
+  box-sizing: border-box;
+  max-width: 116%;
+  row-gap: 20px;
+}
+.phstarIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.textCell {
+  align-self: stretch;
+  border: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-28xl) 0px var(--padding-28xl) 0px;
+  min-height: 147px;
+  gap: -101.5px;
+}
+.checkboxesParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-153xl) 0px 0px;
+  box-sizing: border-box;
+  max-width: 133%;
+  row-gap: 20px;
+}
+.textCell1 {
+  align-self: stretch;
+  border: 1.5px solid var(--color-darkolivegreen);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-28xl) 0px var(--padding-28xl) 0px;
+  gap: -155.5px;
+}
+.taskItem {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+}
+.secondTaskCheckboxes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-185xl) 0px 0px;
+  box-sizing: border-box;
+  max-width: 123%;
+  row-gap: 20px;
+}
+.textCell2 {
+  width: 320px;
+  border: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-28xl) 0px var(--padding-28xl) 0px;
+  min-height: 147px;
+  gap: -124px;
+}
+.planWeekendTrip {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 120px;
+}
+.checkboxesGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-193xl) 0px 0px;
+  box-sizing: border-box;
+  max-width: 120%;
+  row-gap: 20px;
+}
+.textCell3 {
+  width: 320px;
+  border: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-28xl) 0px var(--padding-28xl) 0px;
+  min-height: 147px;
+  gap: -116px;
+}
+.secondTaskItemContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+  min-width: 208px;
+}
+.callTheBank {
+  text-decoration: none;
+  position: relative;
+  line-height: 20px;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.thirdTaskContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-209xl) 0px 0px;
+  box-sizing: border-box;
+  max-width: 115%;
+  row-gap: 20px;
+}
+.textCell4 {
+  width: 320px;
+  border: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-28xl) 0px var(--padding-28xl) 0px;
+  min-height: 147px;
+  gap: -100px;
+}
+.secondTaskItem {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+  min-width: 434px;
+  max-width: 100%;
+}
+.taskItemParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+  max-width: 100%;
+}
+.completed {
+  width: 75px;
+  height: 20px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.container2 {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  border-radius: var(--br-11xs);
+  z-index: 0;
+}
+.checkSmallIcon {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  z-index: 1;
+}
+.stateLayer {
+  border-radius: var(--br-81xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xs);
+  position: relative;
+}
+.checkboxes {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xs);
+  box-sizing: border-box;
+}
+.readABook {
+  width: 84px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.completedTaskNames {
+  height: 34px;
+  width: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0px 0px;
+  box-sizing: border-box;
+}
+.completedTaskCheckboxes {
+  height: 48px;
+  width: 131px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.phstarIcon5 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.completedTaskStars {
+  height: 36px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0px 0px;
+  box-sizing: border-box;
+}
+.textCell5 {
+  width: 1017px;
+  height: 56px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: var(--gap-811xl);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.accordionContent {
+  position: relative;
+  color: transparent;
+  display: none;
+}
+.textCellOpen {
+  width: 1017px;
+  height: 56px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: var(--gap-811xl);
+  cursor: pointer;
+}
+.accordionContentWrap {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  overflow: hidden;
+}
+.accordionContent1 {
+  width: 1017px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: var(--gap-811xl);
+  cursor: default;
+  grid-template-rows: 0fr;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.accordionContent1.accordion__open {
+  grid-template-rows: 1fr;
+}
+.accordionContent1.accordion__close {
+  grid-template-rows: 0fr;
+}
+.accordionItemMock {
+  width: 1017px;
+  display: none;
+  flex-direction: column;
+}
+.cleanTheHouse {
+  width: 107px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cleanTheHouseWrapper {
+  height: 34px;
+  width: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0px 0px;
+  box-sizing: border-box;
+}
+.checkboxesParent1 {
+  height: 48px;
+  width: 154px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.textCell6 {
+  width: 1017px;
+  height: 56px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: 807px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.preparePresentation {
+  width: 144px;
+  height: 20px;
+  position: relative;
+  text-decoration: line-through;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.preparePresentationWrapper {
+  height: 34px;
+  width: 143px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0px 0px;
+  box-sizing: border-box;
+}
+.checkboxesParent3 {
+  height: 48px;
+  width: 191px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.textCell7 {
+  width: 1017px;
+  height: 56px;
+  border-top: 1.5px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-13xl) var(--padding-9xs) 0px;
+  gap: 770px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+.completedTaskItem {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) 0px;
+}
+.frameParent1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+  max-width: 100%;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+}
+.frameContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+  flex-shrink: 0;
+  max-width: calc(100% - 328px);
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-outfit);
+}
+.container1 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xl) 0px 0px;
+  box-sizing: border-box;
+  gap: var(--gap-29xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+  font-family: var(--font-outfit);
+}
+.toDoNavblockLight {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-29xl);
+  box-sizing: border-box;
+  min-height: 900px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 925px) {
+  .frameParent {
+    padding-top: var(--padding-28xl);
+    padding-bottom: var(--padding-33xl);
+    box-sizing: border-box;
+  }
+
+  .containerInner {
+    display: none;
+    padding-top: var(--padding-29xl);
+    box-sizing: border-box;
+  }
+
+  .taskItem {
+    flex: 1;
+  }
+
+  .taskItemParent {
+    flex-wrap: wrap;
+  }
+
+  .frameContainer {
+    max-width: 100%;
+  }
+
+  .toDoNavblockLight {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 700px) {
+  .secondTaskItem {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+
+  .container1 {
+    gap: var(--gap-5xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+
+  .frameParent {
+    padding-top: var(--padding-12xl);
+    padding-bottom: var(--padding-15xl);
+    box-sizing: border-box;
+  }
+
+  .containerInner {
+    padding-top: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+
+  .taskCheckboxes {
+    flex-wrap: wrap;
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+
+  .checkboxesParent {
+    flex-wrap: wrap;
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+
+  .secondTaskCheckboxes {
+    flex-wrap: wrap;
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+
+  .checkboxesGroup {
+    flex-wrap: wrap;
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+
+  .thirdTaskContent {
+    flex-wrap: wrap;
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

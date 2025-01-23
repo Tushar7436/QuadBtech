@@ -1,0 +1,264 @@
+.donutChartChild {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  box-shadow: 0px 1.3px 6.6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+  z-index: 0;
+}
+.secondaryText {
+  position: relative;
+  color: var(--gray);
+  display: none;
+  z-index: 1;
+}
+.primaryText {
+  width: 81px;
+  height: 16px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.div {
+  width: 22px;
+  height: 26px;
+  position: relative;
+  font-size: var(--font-size-2xl-3);
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.primaryTextParent {
+  height: 43.3px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs-3);
+}
+.frameChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 50%;
+  background-color: var(--gray-2);
+}
+.frameItem {
+  position: absolute;
+  height: 66.98%;
+  width: 100%;
+  top: 33.96%;
+  right: 0%;
+  bottom: -0.94%;
+  left: 0%;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+}
+.frameInner {
+  position: absolute;
+  height: 25.47%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 74.53%;
+  left: 0%;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+}
+.rectangleParent {
+  position: absolute;
+  height: 66.25%;
+  width: 16.88%;
+  top: 16.88%;
+  right: 41.88%;
+  bottom: 16.87%;
+  left: 41.25%;
+}
+.ellipseParent {
+  width: 16px;
+  position: relative;
+  height: 16px;
+}
+.frameParent {
+  height: 43.3px;
+  width: 192.2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-77xl-2);
+}
+.chartContainerInner {
+  width: 212.8px;
+  height: 43.3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px var(--padding-xl-6);
+  box-sizing: border-box;
+}
+.chartContainerChild {
+  width: 236px;
+  height: 1.3px;
+  position: relative;
+}
+.ellipseDiv {
+  width: 151.6px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-seagreen-100);
+  height: 151.6px;
+}
+.frameDiv {
+  width: 193.5px;
+  height: 151.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px var(--padding-22xl-9);
+  box-sizing: border-box;
+}
+.chartContainer {
+  width: 236px;
+  height: 238.9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+  z-index: 4;
+  font-size: var(--font-size-sm-3);
+}
+.frameChild1 {
+  width: 6px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-seagreen-100);
+  height: 6px;
+  flex-shrink: 0;
+}
+.ellipseWrapper {
+  height: 8.7px;
+  width: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs-7) 0px 0px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.product1 {
+  height: 11.3px;
+  width: 41.6px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frameGroup {
+  height: 11.3px;
+  width: 51.9px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs-3);
+}
+.frameChild2 {
+  width: 6px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-darkslategray-100);
+  height: 6px;
+}
+.ellipseContainer {
+  height: 8.7px;
+  width: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs-7) 0px 0px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.product2 {
+  height: 11.3px;
+  width: 41.6px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frameContainer {
+  height: 11.3px;
+  width: 51.9px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs-3);
+}
+.frameParent1 {
+  height: 11.3px;
+  width: 109.1px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs-3);
+}
+.donutChartInner {
+  width: 129.7px;
+  height: 11.3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px var(--padding-xl-6);
+  box-sizing: border-box;
+  z-index: 3;
+}
+.donutChartItem {
+  width: 151.6px;
+  height: 151.6px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -102px;
+  left: 193.5px;
+  border-radius: 50%;
+  background-color: var(--color-darkslategray-100);
+  transform: rotate(-180deg);
+  transform-origin: 0 0;
+  z-index: 4;
+}
+.donutChart {
+  height: 307.1px;
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-lg-6) 0px var(--padding-3xl-4);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-base-9);
+  text-align: left;
+  font-size: var(--font-size-5xs);
+  color: var(--black);
+  font-family: var(--font-inter);
+}
